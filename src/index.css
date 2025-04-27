@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #15031d;
+    color: #fff;
+    overflow-x: hidden;
+}
+ul{
+    list-style: none;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+nav ul a{
+    text-decoration: none;
+    background: #fff;
+    padding: 0.5rem;
+    border-radius: 10px;
+    color: #15031d;
+}
+nav ul .active{
+    background: #380257;
+    color: #fff;
+}
+.navbar{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    padding: 1rem 0;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 5px 0 #fff;
+}
+.navbar h2{
+    font-size: 1.5rem;
+}
+.post-section{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2rem 1rem;
+    gap: 0.5rem;
+}
+.post{
+    border: 1px solid #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    background: #1d022c;
+}
+.post:hover{
+    box-shadow: 2px 2px 2px #d6d4d4;
+    transform: translateY(-10px);
+    transition: 0.2s linear;
+}
+.post-title{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+form{
+    max-width: 768px;
+    margin: 2rem auto;
+}
+.input-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+.input-box label{
+    font-size: 1.2rem;
+}
+.input-box input, .input-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    background: transparent;
+    border: 1px solid #fff;
+    box-shadow: none;
+    outline: none;
+    color: #b6b4b4;
+}
+.input-box input::placeholder, .input-box textarea::placeholder{
+    color: #b6b4b4;
+}
+.form-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-btn button{
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #15031d;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.openPost{
+    max-width: 768px;
+    margin: 2rem auto;
+    padding: 0 0.5rem;
+}
+.openPostTitle{
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+.openPostBody{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+.openPostBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 1rem;
+}
+.openPostBtn button:nth-child(1){
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    background: #1f95e4;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.openPostBtn button:nth-child(2){
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    background: #f80e2d;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.about-header{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+@media (max-width: 425px) {
+    .post-section{
+        grid-template-columns: 1fr;
+    }
+}

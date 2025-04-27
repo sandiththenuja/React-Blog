@@ -1,0 +1,22 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "First post",
+      "datetime": "updated at: April 25",
+      "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque veritatis sunt, aliquid animi mollitia velit dolor officiis. Veniam tenetur numquam eveniet et iure accusamus ab molestiae totam, quo modi ipsa!"
+    },
+    {
+      "id": "2",
+      "title": "Second post",
+      "datetime": "updated at: April 25",
+      "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque veritatis sunt, aliquid animi mollitia velit dolor officiis. Veniam tenetur numquam eveniet et iure accusamus ab molestiae totam, quo modi ipsa!"
+    },
+    {
+      "id": "3",
+      "title": "Third post",
+      "datetime": "April 25",
+      "message": "post content"
+    }
+  ]
+}
